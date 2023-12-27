@@ -1,0 +1,90 @@
+body {
+    background-color: darkblue;
+    color: white;
+}
+
+.after-line-text {
+    margin-left: 20px;
+}
+
+.hero-section h1 {
+    font-size: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.scroll-down img {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-section {
+    margin-bottom: 700px;
+}
+
+.body-section {
+    padding: 240px 220px 10px 220px;
+    width: 100%
+}
+
+.body-first-div-right {
+    position: relative
+}
+
+.first-number {
+    position: absolute;
+    font-size: 200px;
+    opacity: 0.2;
+    line-height: 1;
+}
+
+.body-first-div-right img {
+    width: 100%;
+}
+
+.body-first-div-left-text {
+    padding: 100px;
+}
+
+.body-first-div-left-text h1{
+    margin: 30px auto;
+}
+
+.read-more {
+    margin-top: 30px;
+}
+
+.yellow {
+    color: #FBD784;
+}
+
+.read-more img {
+    margin-left: 10px;
+}
+
+.body-second-div-right {
+    position: relative
+}
+
+.second-number {
+    position: absolute;
+    font-size: 200px;
+    opacity: 0.2;
+    line-height: 1;
+}
+
+.body-second-div-left img {
+    width: 100%;
+}
+
+.body-second-div-right-text {
+    padding: 100px;
+}
+
+.body-second-div-right-text h1{
+    margin: 30px auto;
+}
