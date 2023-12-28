@@ -7,8 +7,31 @@ body {
 }
 
 header {
-    
     height: 150vh;
+}
+
+.nav-hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.nav-hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FBD784;;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .after-line-text {
@@ -31,8 +54,19 @@ header {
 }
 
 .body-section {
-    padding: 0 220px 10px 220px;
-    width: 100%
+    width: 100%;
+    padding: 0 50px 10px 50px;
+    background: rgba(11,29,38, 0.3);
+}
+
+.body-first-div {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+}
+
+.body-second-div {
+    margin-bottom: 50px;
 }
 
 .body-first-div-right {
@@ -50,8 +84,8 @@ header {
     width: 100%;
 }
 
-.body-first-div-left-text {
-    padding: 100px;
+.body-first-div-left-text, .body-second-div-right-text {
+    padding: 20px;
 }
 
 .body-first-div-left-text h1{
@@ -70,6 +104,11 @@ header {
     margin-left: 10px;
 }
 
+.body-second-div{
+    display: flex;
+    flex-direction: column;
+}
+
 .body-second-div-right {
     position: relative
 }
@@ -85,10 +124,54 @@ header {
     width: 100%;
 }
 
-.body-second-div-right-text {
-    padding: 100px;
-}
-
 .body-second-div-right-text h1{
     margin: 30px auto;
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        height: 170vh;
+    }
+
+    .body-section {
+        padding: 0 50px 10px 50px;
+        background-color: transparent;
+    }
+
+    .body-first-div-left-text, .body-second-div-right-text{
+        padding: 20px;
+    }
+
+    .body-first-div, .body-second-div{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        height: 170vh;
+    }
+
+    .body-first-div-left-text, .body-second-div-right-text{
+        padding: 50px;
+    }
+
+    .body-section {
+        padding: 0 100px 10px 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .body-section {
+        /* background-image: radial-gradient(red, yellow, green); */
+        background-color: transparent;
+        padding: 0 170px 10px 170px;
+    }
+
+    .body-first-div-left-text, .body-second-div-right-text{
+        padding: 70px;
+    }
 }
