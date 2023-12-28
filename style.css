@@ -1,6 +1,14 @@
 body {
-    background-color: darkblue;
+    background-color: #0B1D26;
     color: white;
+    background-image: url(./assets/background-hiking.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+header {
+    
+    height: 150vh;
 }
 
 .after-line-text {
@@ -22,12 +30,8 @@ body {
     text-decoration: none;
 }
 
-.hero-section {
-    margin-bottom: 700px;
-}
-
 .body-section {
-    padding: 240px 220px 10px 220px;
+    padding: 0 220px 10px 220px;
     width: 100%
 }
 
